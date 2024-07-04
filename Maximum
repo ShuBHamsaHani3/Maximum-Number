@@ -1,0 +1,39 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Maximum {
+    int num1,num2;
+    Maximum(int n1,int n2)
+    {
+        num1 = n1;
+        num2 = n2;
+    }
+    public void maxNum()
+    {
+        if (num1>num2)
+        {
+            System.out.println();
+        }
+        else {
+            System.out.println(num2);
+        }
+    }
+
+}
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("Enter the First Number");
+        int a = sc.nextInt();
+        System.out.println("Enter the Second Number");
+        int b = sc.nextInt();
+        Maximum objMaximum = new Maximum(a,b);
+        objMaximum.maxNum();
+    }
+
+
+}
